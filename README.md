@@ -1,4 +1,4 @@
-# boilerplate for a dockerized node app with pm2 & docker-compose
+# boilerplate for a docker node app with pm2 & docker-compose
 
 ## pm2
 
