@@ -1,0 +1,10 @@
+{
+	"apps": [
+		{
+			"name": "api",
+			"cwd": "",
+			"script": "index.js",
+            "watch": true
+		}
+	]
+}
