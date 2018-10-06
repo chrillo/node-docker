@@ -9,7 +9,7 @@ WORKDIR /usr/src
 COPY --from=base /usr/src .
 # RUN pm2 install pm2-server-monit
 # Expose port 8080
-EXPOSE 8080
+EXPOSE 3000
 CMD ["pm2-runtime", "start", "process.json"]
 # CMD ["npm","start"]
 
