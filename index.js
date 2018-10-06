@@ -13,4 +13,4 @@ app.get('*', function (req, res) {
 })
 
 
-app.listen(port, () => console.log(`${process.pid} listening on port ${port} with env ${process.env.NODE_ENV}!`))
+app.listen(port, () => console.log(`pid ${process.pid} listening on port ${port} with env ${process.env.NODE_ENV}!`))

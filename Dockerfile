@@ -11,5 +11,6 @@ COPY --from=base /usr/src .
 # Expose port 8080
 EXPOSE 8080
 CMD ["pm2-runtime", "start", "process.json"]
+# CMD ["npm","start"]
 
 
