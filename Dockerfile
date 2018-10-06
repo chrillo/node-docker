@@ -1,6 +1,6 @@
 FROM keymetrics/pm2:10-alpine as base
 WORKDIR /usr/src
-COPY package.json package-lock.json /usr/src/
+COPY package.json /usr/src/
 RUN npm ci --production
 COPY . .
 
