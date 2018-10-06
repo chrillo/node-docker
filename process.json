@@ -2,8 +2,10 @@
 	"apps": [
 		{
 			"name": "api",
-            "script": "index.js",
-            "watch":process.env.NODE_ENV === 'development'
+            "script": "npm",
+            "cwd": "",
+            "args" : "start",
+            "watch":process.env.NODE_ENV !== 'production'
 		}
 	]
 }

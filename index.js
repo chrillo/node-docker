@@ -1,4 +1,4 @@
-const express = require('express')
+import express from 'express'
 const app = express()
 
 const port = process.env.PORT || 8080
@@ -12,4 +12,5 @@ app.get('*', function (req, res) {
   })
 })
 
-app.listen(port, () => console.log(`${process.pid} listening on port ${port}!`))
+
+app.listen(port, () => console.log(`${process.pid} listening on port ${port} with env ${process.env.NODE_ENV}!`))

@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon . --exec \"node -r dotenv/config index.js\""
+    "start": "node -r esm -r dotenv/config index.js",
+    "dev": "pm2 start process.json && pm2 logs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
-  },
-  "devDependencies": {
     "dotenv": "^6.0.0",
-    "nodemon": "^1.18.4"
+    "esm": "^3.0.84",
+    "express": "^4.16.3"
   }
 }
