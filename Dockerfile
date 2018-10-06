@@ -1,12 +1,12 @@
 FROM keymetrics/pm2:10-alpine as base
-WORKDIR /usr/src
-COPY package.json package-lock.json /usr/src/
+WORKDIR /usr/app/
+COPY package.json package-lock.json /usr/app/
 RUN npm ci --production
 COPY . .
 
 FROM base
-WORKDIR /usr/src
-COPY --from=base /usr/src .
+WORKDIR /usr/app/
+COPY --from=base /usr/app/ .
 # RUN pm2 install pm2-server-monit
 # Expose port 8080
 EXPOSE 3000
