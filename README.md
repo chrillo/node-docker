@@ -7,7 +7,7 @@ pm is run in watch mode and will restart on file changes
 
 # docker-compose
 
-build
+start with rebuild
 ```
 docker-compose up -d --build api
 ```
