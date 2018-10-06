@@ -16,6 +16,14 @@ docker exec -it CONTAINER_NAME pm2 logs
 docker exec -it CONTAINER_NAME pm2 monit
 ```
 
+## now
+
+deploy to now
+
+```bash
+now
+```
+
 ## docker-compose
 
 start with rebuild
