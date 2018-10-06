@@ -7,8 +7,9 @@ app.get('*', function (req, res) {
   res.json({
       status:'ok',
       port,
-      pid:process.pid
+      pid:process.pid,
+      node_env: process.env.NODE_ENV
   })
 })
 
-app.listen(port, () => console.log(`app listening on port ${port}!`))
+app.listen(port, () => console.log(`${process.pid} listening on port ${port}!`))

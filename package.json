@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch index.js"
+    "dev": "nodemon . --exec \"node -r dotenv/config index.js\""
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "express": "^4.16.3"
   },
   "devDependencies": {
+    "dotenv": "^6.0.0",
     "nodemon": "^1.18.4"
   }
 }
